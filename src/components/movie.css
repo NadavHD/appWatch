@@ -1,0 +1,82 @@
+.image-error {
+    background-color: rgba(0, 0, 0, 0.303);
+    background-image: url("https://images4.alphacoders.com/111/1112635.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-blend-mode: multiply;
+    height: 969px;
+    width: auto;
+    
+  }
+  .appw {
+    font-family: fantasy;
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    transition: 0.8s;
+    animation-name: example;
+    animation-duration: 4.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  
+  }
+  
+  @keyframes example {
+  
+    100% {
+      text-shadow: 5px 5px 50px rgb(0, 34, 255);
+    }
+  
+    80% {
+      text-shadow: 5px 5px 50px rgb(255, 255, 255);
+    }
+  
+    30% {
+      text-shadow: 5px 5px 50px rgb(255, 0, 0);
+    }
+  
+  
+  }
+  
+  .appw:hover {
+    font-size: 35px;
+  }
+  
+  @media screen and (min-width: 400px) {
+    .carusel-img {
+      height: 200px;
+    }
+  }
+
+  @media screen and (min-width: 700px) {
+    .carusel-img {
+      height: 300px;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .carusel-img {
+      height: 5400px;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .carusel-img {
+      height: 500px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .carusel-img {
+      height: 600px;
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .carusel-img {
+      height: 800px;
+    }
+  }
+  
