@@ -6,7 +6,7 @@ import { HiOutlineSearch } from 'react-icons/hi';
 
 const Navbar = () => {
   return (
-    <div style={{position:"absolute"}} className="d-flex align-items-center justify-content-between px-2 px-md-3 px-lg-4 px-xl-5 pt-4">
+    <div  className="d-flex align-items-center justify-content-between px-2 px-md-3 px-lg-4 px-xl-5 pt-4">
       <div>
         <div className="logo col-lg-2">
           <Link style={{ textDecoration: 'none' }} to={'/'}><span className='appw'>AppWatch</span></Link>

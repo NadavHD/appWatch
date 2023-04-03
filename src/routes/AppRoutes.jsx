@@ -11,6 +11,8 @@ const AppRoutes = () => {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="search/:searchQ" element={<Home />} />
+            <Route path="search/:searchQ/year/:YYYY" element={<Home />} />
           </Route>
           <Route path="*" element={<Error/>}/>
         </Routes>
