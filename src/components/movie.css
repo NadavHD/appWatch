@@ -1,5 +1,8 @@
+body{
+background-color:rgb(15, 15, 15)
+}
 .image-error {
-    background-color: rgba(0, 0, 0, 0.303);
+    background-color: rgb(229, 229, 229);
     background-image: url("https://images4.alphacoders.com/111/1112635.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -13,7 +16,7 @@
   }
   .appw {
     font-family: fantasy;
-    font-size: 30px;
+    font-size: 40px;
     color: rgb(255, 0, 0);
     transition: 0.8s;
     animation-name: example;
@@ -25,9 +28,6 @@
   
   @keyframes example {
   
-    100% {
-      text-shadow: 5px 5px 50px rgb(0, 34, 255);
-    }
   
     80% {
       text-shadow: 5px 5px 50px rgb(255, 255, 255);
@@ -41,42 +41,111 @@
   }
   
   .appw:hover {
-    font-size: 35px;
+    font-size: 45px;
   }
   
   @media screen and (min-width: 400px) {
     .carusel-img {
-      height: 200px;
+      height: 330px;
     }
   }
 
   @media screen and (min-width: 700px) {
     .carusel-img {
-      height: 300px;
+      height: 280px;
     }
   }
-  
+
   @media screen and (min-width: 900px) {
     .carusel-img {
-      height: 5400px;
+      height: 320px;
     }
   }
-  
+
   @media screen and (min-width: 1000px) {
     .carusel-img {
-      height: 500px;
+      height: 360px;
     }
   }
-  
+
   @media screen and (min-width: 1200px) {
     .carusel-img {
-      height: 600px;
+      height: 400px;
     }
   }
-  
+
   @media screen and (min-width: 1400px) {
     .carusel-img {
       height: 800px;
     }
   }
+
+
+  .movie-img:hover{
+    transform: scale(1.1);
+  }
+
+
+ .years_list{
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #ffffff 50%
+    );
+    font-weight: bold;
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
   
+  .years_list:before{
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+ .years_list:hover {
+   background-position: 0;
+  }
+  
+  .years_list:hover::before{
+    width: 100%;
+  }
+  
+.movie_info{
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 450px) {
+  .details_height{
+      height: 140vh;
+  }
+}
+@media screen and (min-width: 526px) {
+  .details_height{
+      height: 145vh;
+  }
+}
+@media screen and (min-width: 546px) {
+  .details_height{
+      height: 120vh;
+  }
+} 
+ @media screen and (min-width: 992px) {
+  .details_height{
+      height: 90vh;
+  }
+}
