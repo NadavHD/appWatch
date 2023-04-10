@@ -4,12 +4,16 @@ import { Link, useParams, useNavigate } from 'react-router-dom'
 import Select from 'react-select'
 import axios from 'axios'
 import PhoneInput from './PhoneInput'
+import BeatLoader from "react-spinners/BeatLoader";
+
 
 const Home = () => {
   const [movie, setMovie] = useState([])
   const [empty, setEmpty] = useState(false)
   const [years, setYears] = useState([])
   const nav = useNavigate();
+  const [loading,setLoading] = useState(true)
+
 
 
   const { searchQ, YYYY } = useParams()
@@ -39,6 +43,10 @@ const Home = () => {
     setYears(temp_ar)
   }, [])
 
+  setTimeout(() => {
+    setLoading(false)
+  }, 1000);
+
   return (
     <div>
       <Carousel />
@@ -66,14 +74,20 @@ const Home = () => {
         </div>
       </div>
 
+          {loading?<span style={{ fontSize: "80px", alignItems: "center", display: "flex", justifyContent: "center", height: "100vh", color: "white" }}>Loading<BeatLoader style={{ fontSize: "80px" }} color="#ff0000" margin={5} size={10} speedMultiplier={1} /> </span> :
+          <div>
       {empty && <h1 className='text-center text-white fs-1'>no results...</h1>}
-      <div style={{ display: "flex", flexWrap: "wrap",justifyContent:"center",marginLeft:"50px" }} >
+      <div style={{ display: "flex", flexWrap: "wrap",justifyContent:"center",marginLeft:"50px",transition:"0.8s" }} >
         {movie && movie.map((movie, index) => (
-          <Link key={index} to={`/video/${movie.imdbID}`}> <img className='movie-img  col-10 col-lg-12 col-md-11 img-fluid   ' style={{ padding: "20px", borderRadius: "50px", transition: "0.5s" }} src={movie.Poster} onError={(event) => event.target.style.display = 'none'} /></Link>
+          <Link key={index} to={`/video/${movie.imdbID}`}> <img className='movie-img ' style={{ padding: "21px", borderRadius: "50px", transition: "0.5s",height:"480px",width:"340px" }} src={movie.Poster} onError={(event) => event.target.style.display = 'none'} /></Link>
         ))}
+          
       </div>
-
+      </div>
+}
     </div>
+
+    
   )
 }
 

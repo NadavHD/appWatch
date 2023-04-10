@@ -3,10 +3,10 @@ import { MDBFooter, MDBContainer } from 'mdb-react-ui-kit';
 
 export default function FooterCopyright() {
   return (
-    <MDBFooter className='text-center text-white' style={{ backgroundColor: '#0F0F0F' }}>
+    <MDBFooter className='text-center text-white' >
       <MDBContainer className='p-4'></MDBContainer>
 
-      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+      <div className='text-center p-3' style={{ backgroundColor: 'black' }}>
         © 2023 Copyright: Nadav Yona
         
       </div>
