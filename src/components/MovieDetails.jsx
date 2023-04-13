@@ -41,7 +41,7 @@ const MovieDetails = () => {
               <p>{info.Plot}</p>
               <p>Genre:{info.Genre}</p>
               <p>Actors:{info.Actors}</p>
-              <p>Released Date:{info.Released}</p>
+              <p>Release Date:{info.Released}</p>
               <p>Movie Length:{info.Runtime}</p>
               <p>Director:{info.Director}</p>
               <p style={{fontWeight: "bold"}} >Rating:{info.imdbRating} <AiFillStar style={{fontSize:"26px",color:"#f5c518"}}/></p>

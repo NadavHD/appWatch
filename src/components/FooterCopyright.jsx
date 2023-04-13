@@ -6,8 +6,8 @@ export default function FooterCopyright() {
     <MDBFooter className='text-center text-white' >
       <MDBContainer className='p-4'></MDBContainer>
 
-      <div className='text-center p-3' style={{ backgroundColor: 'black' }}>
-        © 2023 Copyright: Nadav Yonatanov
+      <div className='text-center p-3' style={{ backgroundColor: 'black',fontSize:"15px" }}>
+      Copyright © 2023 Nadav Yonatanov. All Rights Reserved
         
       </div>
     </MDBFooter>

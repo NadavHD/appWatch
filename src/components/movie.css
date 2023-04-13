@@ -10,13 +10,12 @@ body{
 .image-error {
     background-color: rgb(229, 229, 229);
     background-image: url("https://images4.alphacoders.com/111/1112635.png");
-    background-position: center;
+    background-position: 52%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     background-blend-mode: multiply;
-    height: 969px;
     width: auto;
     
   }
@@ -51,6 +50,7 @@ body{
       font-size: 26px;
     }
   }
+
   
   .appw:hover {
     font-size: 45px;
