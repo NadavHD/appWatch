@@ -77,7 +77,7 @@ const Home = () => {
           {loading?<span style={{ fontSize: "80px", alignItems: "center", display: "flex", justifyContent: "center", height: "100vh", color: "white" }}>Loading<BeatLoader style={{ fontSize: "80px" }} color="#ff0000" margin={5} size={10} speedMultiplier={1} /> </span> :
           <div>
       {empty && <h1 className='text-center text-white fs-1 ' style={{paddingTop:"150px"}}>no results...</h1>}
-      <div style={{ display: "flex", flexWrap: "wrap",justifyContent:"center",marginLeft:"50px",transition:"0.8s" }} >
+      <div style={{ display: "flex", flexWrap: "wrap",justifyContent:"center",transition:"0.8s" }} >
         {movie && movie.map((movie, index) => (
           <Link key={index} to={`/video/${movie.imdbID}`}> <img className='movie-img ' style={{ padding: "21px", borderRadius: "50px", transition: "0.5s",height:"480px",width:"340px" }} src={movie.Poster} onError={(event) => event.target.style.display = 'none'} /></Link>
         ))}

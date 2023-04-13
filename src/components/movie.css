@@ -45,10 +45,17 @@ body{
   
   
   }
+
+  @media screen and (max-width: 700px) {
+    .appw {
+      font-size: 26px;
+    }
+  }
   
   .appw:hover {
     font-size: 45px;
   }
+
   
   @media screen and (min-width: 400px) {
     .carusel-img {
